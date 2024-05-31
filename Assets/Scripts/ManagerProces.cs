@@ -6,23 +6,23 @@ using UnityEngine;
 public class ManagerProces : MonoBehaviour
 {
     public int Cont = 1;
-    [SerializeField] public TextMeshProUGUI lblCPU;
-    [SerializeField] public TextMeshProUGUI lblRAM;
-    [SerializeField] public TextMeshProUGUI lblHHDD;
-    [SerializeField] public TextMeshProUGUI lblStatusFilesManager;
-    [SerializeField] public TextMeshProUGUI lblStatusFilesManagerTwo;
-    [SerializeField] public TextMeshProUGUI lblNameManagerProcess;
-    [SerializeField] public TextMeshProUGUI lblResourceManagerProcess;
-    [SerializeField] public TextMeshProUGUI lblCPUManagerProcess;
-    [SerializeField] public TextMeshProUGUI lblRAMManagerProcess;
-    [SerializeField] public TextMeshProUGUI lblHHDManagerProcess;
-    [SerializeField] public TextMeshProUGUI lblNameManagerProcessTwo;
-    [SerializeField] public TextMeshProUGUI lblResourceManagerProcessTwo;
-    [SerializeField] public TextMeshProUGUI lblCPUManagerProcessTwo;
-    [SerializeField] public TextMeshProUGUI lblRAMManagerProcessTwo;
-    [SerializeField] public TextMeshProUGUI lblHHDManagerProcessTwo;
-    [SerializeField] public GameObject imgStatusManagerProcess;
-    [SerializeField] public GameObject imgStatusManagerProcessTwo;
+    public TextMeshProUGUI lblCPU;
+    public TextMeshProUGUI lblRAM;
+    public TextMeshProUGUI lblHHDD;
+    public TextMeshProUGUI lblStatusFilesManager;
+    public TextMeshProUGUI lblStatusFilesManagerTwo;
+    public TextMeshProUGUI lblNameManagerProcess;
+    public TextMeshProUGUI lblResourceManagerProcess;
+    public TextMeshProUGUI lblCPUManagerProcess;
+    public TextMeshProUGUI lblRAMManagerProcess;
+    public TextMeshProUGUI lblHHDManagerProcess;
+    public TextMeshProUGUI lblNameManagerProcessTwo;
+    public TextMeshProUGUI lblResourceManagerProcessTwo;
+    public TextMeshProUGUI lblCPUManagerProcessTwo;
+    public TextMeshProUGUI lblRAMManagerProcessTwo;
+    public TextMeshProUGUI lblHHDManagerProcessTwo;
+    public GameObject imgStatusManagerProcess;
+    public GameObject imgStatusManagerProcessTwo;
 
     /// <summary>
     /// Star process and configure field names
@@ -39,6 +39,11 @@ public class ManagerProces : MonoBehaviour
         StartCoroutine(WaitAndPrint(3.0f));
     }
 
+    /// <summary>
+    /// Methods for sleep the aplication
+    /// </summary>
+    /// <param name="waitTime"></param>
+    /// <returns></returns>
     IEnumerator WaitAndPrint(float waitTime)
     {
         if (Cont == 1)
@@ -112,12 +117,4 @@ public class ManagerProces : MonoBehaviour
             Console.WriteLine("Proceso Terminado");
         }
     }
-
-
-    public void second()
-    {
-
-        StartCoroutine(WaitAndPrint(3.0f));
-    }
-
 }

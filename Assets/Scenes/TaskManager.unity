@@ -2922,8 +2922,8 @@ MonoBehaviour:
   lblCPUManagerProcessTwo: {fileID: 637216524}
   lblRAMManagerProcessTwo: {fileID: 723427290}
   lblHHDManagerProcessTwo: {fileID: 494810297}
-  imgStatusManagerProcess: {fileID: 0}
-  imgStatusManagerProcessTwo: {fileID: 0}
+  imgStatusManagerProcess: {fileID: 1489813165}
+  imgStatusManagerProcessTwo: {fileID: 1253107966}
 --- !u!1 &1634028633
 GameObject:
   m_ObjectHideFlags: 0
